@@ -1,0 +1,101 @@
+/*///////////////////////////////////////////*/
+/*GENERAL*/
+/*///////////////////////////////////////////*/
+body {
+  background-image: url("../img/772.jpg");
+  background-size: 40%;
+}
+
+* {
+  font-family: 'Courgette', cursive;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.masque {
+  visibility: hidden;
+}
+/*///////////////////////////////////////////*/
+/*BOUTONS*/
+/*///////////////////////////////////////////*/
+h1 {
+  font-size: 2.5em;
+  color: black;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.5em;
+  color: white;
+}
+
+.titre, .event {
+  position: relative;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.titre {
+  height: 150px;
+  border: 10px solid #D3A91F;
+  background-color: white;
+  position: relative;
+}
+
+.event {
+  height: 80px;
+  border: 5px solid #D3A91F;
+  background-color: #D3A91F;
+  animation: event;
+}
+
+.titre img {
+  width: 80px;
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  transform: rotate(30deg);
+}
+
+/*///////////////////////////////////////////*/
+/*CLIQUEZ MOI*/
+/*///////////////////////////////////////////*/
+
+.clic {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.clicTitre {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: rotate(25deg);
+  color: #dab100;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.clicEvent {
+  position: absolute;
+  right: 220px;
+  top: -5px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.animClic {
+  animation: animClic 2s;
+}
+
+@keyframes animClic {
+  from {opacity: 0; top: 10px;}
+  to {opacity: 1;}
+}
